@@ -1,0 +1,5 @@
+export IconHome from "../../assets/svg/home"
+export IconSearch from "../../assets/svg/search"
+export IconMessage from "../../assets/svg/message"
+export IconUser from "../../assets/svg/user"
+export IconPlus from "../../assets/svg/plus"

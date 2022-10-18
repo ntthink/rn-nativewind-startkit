@@ -3,13 +3,11 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Dimensions, Platform, Text, View } from "react-native";
 import WelcomeScreen, { WelcomeScreen2 } from "../screens/tab1/WelcomeScreen";
-import IconHome from "../../assets/svg/home"
-import IconSearch from "../../assets/svg/search"
-import IconMessage from "../../assets/svg/message"
-import IconUser from "../../assets/svg/user"
-import IconPlus from "../../assets/svg/plus"
+import {IconHome, IconSearch, IconUser, IconPlus, IconMessage} from "../library/icons"
 
 const Tab = createBottomTabNavigator();
+
+
 export function BottomTabNav() {
 
   return (
