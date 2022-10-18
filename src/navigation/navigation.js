@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Dimensions, Platform, Text, View } from "react-native";
 import WelcomeScreen, { WelcomeScreen2 } from "../screens/tab1/WelcomeScreen";
 import {IconHome, IconSearch, IconUser, IconPlus, IconMessage} from "../library/icons"
+import SearchStack from "../screens/search";
 
 const Tab = createBottomTabNavigator();
 
@@ -60,7 +61,7 @@ export function BottomTabNav() {
       })}
     >
       <Tab.Screen name="tab1" component={WelcomeScreen} options={{ tabBarLabel: "TAB 1" }}  />
-      <Tab.Screen name="tab2" component={WelcomeScreen2} options={{ tabBarLabel: "TAB 2" }}  />
+      <Tab.Screen name="tab2" component={SearchStack} options={{ tabBarLabel: "TAB 2" }}  />
       <Tab.Screen name="tab3" component={WelcomeScreen} options={{ tabBarLabel: "TAB 3" }}  />
       <Tab.Screen name="tab4" component={WelcomeScreen2} options={{ tabBarLabel: "TAB 4" }}  />
       <Tab.Screen name="tab5" component={WelcomeScreen} options={{ tabBarLabel: "TAB 5" }}  />
